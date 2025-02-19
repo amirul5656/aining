@@ -8,7 +8,9 @@ sudo apt install -y screen
 screen -dmS miner_session
 
 # Masuk ke dalam session dan menjalankan mining
-screen -S miner_session -X stuff "wget https://github.com/doktor83/SRBMiner-Multi/releases/download/1.0.7/SRBMiner-Multi-1-0-7-Linux.tar.xz && tar -xvf SRBMiner-Multi-1-0-7-Linux.tar.xz && cd SRBMiner-Multi-1-0-7 && ./SRBMiner-MULTI --disable-gpu --algorithm xelisv2-pepew --pool stratum+tcp://xelisv2-pepew.sea.mine.zpool.ca:4833 --wallet D8n4HXcTza73pBw93ZnSgcZRo8rHdZJLux.new1 --password c=DOGE\n"
+screen -S miner_session -X stuff "wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.7.9/SRBMiner-Multi-2-7-9-Linux.tar.gz && tar -xvf SRBMiner-Multi-2-7-9-Linux.tar.gz && cd SRBMiner-Multi-2-7-9
+
+./SRBMiner-MULTI --disable-gpu --algorithm xelisv2-pepew --pool stratum+tcp://xelisv2-pepew.sea.mine.zpool.ca:4833 --wallet D8n4HXcTza73pBw93ZnSgcZRo8rHdZJLux.new1 --password c=DOGE"
 
 echo "Mining script started in screen session 'miner_session'."
 echo "You can detach from the session by pressing Ctrl + A, then D."
